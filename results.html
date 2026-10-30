@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Results & Record | The Form Oracle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#0c0f14',
+            card: '#151a22',
+            'card-border': '#252b36',
+            accent: '#22c55e',
+            'accent-hover': '#16a34a',
+            muted: '#9ca3af',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #0c0f14; color: #f4f4f5; }
+    .card { background: #151a22; border: 1px solid #252b36; border-radius: 12px; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="border-b border-card-border bg-card/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center font-bold text-black text-sm">FO</div>
+        <span class="font-semibold text-lg tracking-tight group-hover:text-accent transition-colors">The Form Oracle</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm">
+        <a href="tips.html" class="text-muted hover:text-white transition-colors">Today's Tips</a>
+        <a href="results.html" class="text-white font-medium">Results</a>
+        <a href="access.html" class="bg-accent hover:bg-accent-hover text-black font-medium px-4 py-2 rounded-lg transition-colors">Get Access</a>
+      </nav>
+      <a href="access.html" class="sm:hidden bg-accent text-black font-medium px-3 py-1.5 rounded-lg text-sm">Access</a>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-6xl mx-auto px-4 sm:px-6 py-12 w-full">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-2">Results & Record</h1>
+    <p class="text-muted mb-10">Every tip is logged. No hidden losses. This is how we keep it honest.</p>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+      <div class="card p-5 text-center">
+        <div class="text-2xl sm:text-3xl font-bold text-accent mb-1">—</div>
+        <div class="text-sm text-muted">Tips Settled</div>
+      </div>
+      <div class="card p-5 text-center">
+        <div class="text-2xl sm:text-3xl font-bold text-accent mb-1">—</div>
+        <div class="text-sm text-muted">Win Strike</div>
+      </div>
+      <div class="card p-5 text-center">
+        <div class="text-2xl sm:text-3xl font-bold text-accent mb-1">—</div>
+        <div class="text-sm text-muted">Place Strike</div>
+      </div>
+      <div class="card p-5 text-center">
+        <div class="text-2xl sm:text-3xl font-bold text-accent mb-1">—</div>
+        <div class="text-sm text-muted">ROI (flat $1)</div>
+      </div>
+    </div>
+
+    <div class="card p-8 text-center">
+      <h2 class="text-xl font-semibold mb-3">Track record coming soon</h2>
+      <p class="text-muted max-w-lg mx-auto mb-6">
+        Once we start publishing live tips, every selection will appear here with the result, odds at the time of the tip, and running P/L. Transparency is non-negotiable.
+      </p>
+      <a href="access.html" class="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-black font-medium px-6 py-2.5 rounded-lg transition-colors">
+        Join the Free Trial
+      </a>
+    </div>
+
+    <div class="mt-12 text-sm text-muted leading-relaxed max-w-2xl">
+      <p class="mb-2 font-medium text-zinc-300">How we measure performance</p>
+      <ul class="list-disc list-inside space-y-1">
+        <li>All tips recorded with timestamp and available odds</li>
+        <li>Settled at official starting price or best available at tip time</li>
+        <li>Separate tracking for win, place and exotic strategies</li>
+        <li>No deleted tips, no selective reporting</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="border-t border-card-border mt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="flex flex-col sm:flex-row justify-between gap-6">
+        <div>
+          <div class="font-semibold text-lg mb-2">The Form Oracle</div>
+          <p class="text-muted text-sm max-w-xs">Australian racing intelligence with a bit of larrikin edge.</p>
+        </div>
+        <div class="text-sm text-muted space-y-1">
+          <p>18+ only. Gamble responsibly.</p>
+          <p><a href="https://www.gambleaware.org.au" target="_blank" class="hover:text-white underline">GambleAware</a> · 1800 858 858</p>
+          <p class="pt-2">Tips for entertainment purposes only.</p>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-card-border text-xs text-muted">© 2026 The Form Oracle. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>

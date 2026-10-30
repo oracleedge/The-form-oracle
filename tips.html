@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Today's Tips | The Form Oracle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#0c0f14',
+            card: '#151a22',
+            'card-border': '#252b36',
+            accent: '#22c55e',
+            'accent-hover': '#16a34a',
+            muted: '#9ca3af',
+            gold: '#eab308',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #0c0f14; color: #f4f4f5; }
+    .card { background: #151a22; border: 1px solid #252b36; border-radius: 12px; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="border-b border-card-border bg-card/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center font-bold text-black text-sm">FO</div>
+        <span class="font-semibold text-lg tracking-tight group-hover:text-accent transition-colors">The Form Oracle</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm">
+        <a href="tips.html" class="text-white font-medium">Today's Tips</a>
+        <a href="results.html" class="text-muted hover:text-white transition-colors">Results</a>
+        <a href="access.html" class="bg-accent hover:bg-accent-hover text-black font-medium px-4 py-2 rounded-lg transition-colors">Get Access</a>
+      </nav>
+      <a href="access.html" class="sm:hidden bg-accent text-black font-medium px-3 py-1.5 rounded-lg text-sm">Access</a>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-6xl mx-auto px-4 sm:px-6 py-12 w-full">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+      <div>
+        <h1 class="text-3xl sm:text-4xl font-bold mb-2">Today's Tips</h1>
+        <p class="text-muted">Updated 31 Oct 2026 – 9:00am AEDT</p>
+      </div>
+      <a href="access.html" class="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-black font-medium px-5 py-2.5 rounded-lg transition-colors text-sm">
+        Unlock Full Access
+      </a>
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-8">
+      <span class="px-4 py-1.5 rounded-full text-sm bg-accent text-black border border-accent">All</span>
+      <span class="px-4 py-1.5 rounded-full text-sm border border-card-border text-muted">Thoroughbred</span>
+      <span class="px-4 py-1.5 rounded-full text-sm border border-card-border text-muted">Harness</span>
+      <span class="px-4 py-1.5 rounded-full text-sm border border-card-border text-muted">Greyhound</span>
+    </div>
+
+    <!-- Tip 1 -->
+    <div class="card p-5 sm:p-6 mb-4 hover:border-accent/30 transition-colors">
+      <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+        <div class="flex-1">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="text-xs font-medium px-2 py-0.5 rounded bg-card-border text-muted">Thoroughbred</span>
+            <span class="text-xs font-medium px-2 py-0.5 rounded bg-accent/20 text-accent">Win</span>
+            <span class="text-xs font-medium px-2 py-0.5 rounded bg-green-500/20 text-green-400">High</span>
+          </div>
+          <div class="flex items-baseline gap-3 mb-1">
+            <h2 class="text-xl font-semibold">Example Runner</h2>
+            <span class="text-gold font-medium">$4.20</span>
+          </div>
+          <p class="text-sm text-muted mb-3">Randwick · Race 6 · 3:45pm</p>
+          <p class="text-sm leading-relaxed text-zinc-300">Strong closing sectionals last start, maps for a perfect sit off the speed. Track bias favours on-pacers today.</p>
+        </div>
+        <div class="sm:text-right">
+          <span class="inline-block text-xs font-medium px-2.5 py-1 rounded-full bg-zinc-700 text-zinc-300">Pending</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tip 2 -->
+    <div class="card p-5 sm:p-6 mb-4 hover:border-accent/30 transition-colors">
+      <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+        <div class="flex-1">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="text-xs font-medium px-2 py-0.5 rounded bg-card-border text-muted">Harness</span>
+            <span class="text-xs font-medium px-2 py-0.5 rounded bg-accent/20 text-accent">Win</span>
+            <span class="text-xs font-medium px-2 py-0.5 rounded bg-yellow-500/20 text-yellow-400">Medium</span>
+          </div>
+          <div class="flex items-baseline gap-3 mb-1">
+            <h2 class="text-xl font-semibold">Example Pacer</h2>
+            <span class="text-gold font-medium">$5.50</span>
+          </div>
+          <p class="text-sm text-muted mb-3">Menangle · Race 4 · 7:12pm</p>
+          <p class="text-sm leading-relaxed text-zinc-300">Drawn to advantage, recent form progressive. Driver change looks a positive.</p>
+        </div>
+        <div class="sm:text-right">
+          <span class="inline-block text-xs font-medium px-2.5 py-1 rounded-full bg-zinc-700 text-zinc-300">Pending</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tip 3 -->
+    <div class="card p-5 sm:p-6 mb-4 hover:border-accent/30 transition-colors">
+      <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+        <div class="flex-1">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="text-xs font-medium px-2 py-0.5 rounded bg-card-border text-muted">Greyhound</span>
+            <span class="text-xs font-medium px-2 py-0.5 rounded bg-accent/20 text-accent">Win</span>
+            <span class="text-xs font-medium px-2 py-0.5 rounded bg-green-500/20 text-green-400">High</span>
+          </div>
+          <div class="flex items-baseline gap-3 mb-1">
+            <h2 class="text-xl font-semibold">Example Dog</h2>
+            <span class="text-gold font-medium">$3.80</span>
+          </div>
+          <p class="text-sm text-muted mb-3">The Gardens · Race 8 · 8:05pm</p>
+          <p class="text-sm leading-relaxed text-zinc-300">Box 1 specialist at this trip. Early speed to hold the lead and control the race.</p>
+        </div>
+        <div class="sm:text-right">
+          <span class="inline-block text-xs font-medium px-2.5 py-1 rounded-full bg-zinc-700 text-zinc-300">Pending</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center card p-8">
+      <h3 class="text-xl font-semibold mb-2">This is a sample of what members see</h3>
+      <p class="text-muted mb-6 max-w-md mx-auto">Full daily coverage across more meetings, exotic plays and the complete reasoning is available to members.</p>
+      <a href="access.html" class="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-black font-semibold px-8 py-3 rounded-xl transition-colors">Start Free Trial</a>
+    </div>
+  </main>
+
+  <footer class="border-t border-card-border mt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+      <div class="flex flex-col sm:flex-row justify-between gap-6">
+        <div>
+          <div class="font-semibold text-lg mb-2">The Form Oracle</div>
+          <p class="text-muted text-sm max-w-xs">Australian racing intelligence with a bit of larrikin edge.</p>
+        </div>
+        <div class="text-sm text-muted space-y-1">
+          <p>18+ only. Gamble responsibly.</p>
+          <p><a href="https://www.gambleaware.org.au" target="_blank" class="hover:text-white underline">GambleAware</a> · 1800 858 858</p>
+          <p class="pt-2">Tips for entertainment purposes only.</p>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-card-border text-xs text-muted">© 2026 The Form Oracle. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
